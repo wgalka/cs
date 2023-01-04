@@ -4,6 +4,14 @@ internal class Program
 {
     private static void Main(string[] args)
     {
+
+        Element el1 = new Element("Asd");
+        Element el2 = new Element(el1, "El2");
+        el1.SetName("el1");
+        Element parent = el2.getParent();
+
+        Console.WriteLine(parent);
+
         Console.WriteLine("Hello, World!");
 
         DataArray x = new DataArray(); // inicjalizacja pustej tablicy

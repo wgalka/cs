@@ -14,6 +14,8 @@ Utwórz klasę Element wykorzystując odpowiednie kolekcje (
 https://learn.microsoft.com/pl-pl/dotnet/api/system.collections.generic?view=net-7.0)
 - Znacznik może zawierać wiele innych znaczników (Elementów)
 - Znacznik może mieć wiele atrybutów
+- Znacznik ma rodzica
+- Znacnzik jest zdefiniowany jako łańcuch znaków
 
 ## Zadanie 2
 Utwórz interfejsy:

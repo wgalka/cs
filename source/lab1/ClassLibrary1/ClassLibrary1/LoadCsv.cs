@@ -21,5 +21,10 @@
         {
             throw new NotImplementedException();
         }
+
+        public bool Save(DataArray data, string filename)
+        {
+            throw new NotImplementedException();
+        }
     }
 }

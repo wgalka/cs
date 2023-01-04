@@ -67,7 +67,6 @@ namespace ExampleLibrary
 
         public void GetRow()
         {
-            String.
         }
     }
 
