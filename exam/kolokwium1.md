@@ -76,7 +76,22 @@ Zmodyfikuj klasę SnackMachine by zapisywała historię operacji wykonywanych pr
 Złożoność obliczeniowa struktur danych:
 https://learn.microsoft.com/pl-pl/dotnet/standard/collections/#algorithmic-complexity-of-collections
 
-- List (lista) [metody](https://learn.microsoft.com/pl-pl/dotnet/standard/collections/#algorithmic-complexity-of-collections)
-- Set (zbiór) [metody](https://learn.microsoft.com/pl-pl/dotnet/standard/collections/#algorithmic-complexity-of-collections)
-- Dictionary (słownik) [metody](https://learn.microsoft.com/pl-pl/dotnet/standard/collections/#algorithmic-complexity-of-collections)
-- Queue (kolejka) [metody](https://learn.microsoft.com/pl-pl/dotnet/standard/collections/#algorithmic-complexity-of-collections)
+- List (lista) [metody](https://learn.microsoft.com/pl-pl/dotnet/api/system.collections.generic.list-1?view=net-7.0#methods)
+- HashSet (zbiór) [metody](https://learn.microsoft.com/pl-pl/dotnet/api/system.collections.generic.hashset-1?view=net-7.0#methods)
+- Dictionary (słownik) [metody](https://learn.microsoft.com/pl-pl/dotnet/api/system.collections.generic.dictionary-2?view=net-7.0#methods)
+- Queue (kolejka) [metody](https://learn.microsoft.com/pl-pl/dotnet/api/system.collections.generic.queue-1?view=net-7.0#methods)
+
+Należy znać różnice pomiędzy kolekcjami oraz potrafić dodać, usunąć wybrany element, wyszukać element, wyczyścić kolekcję.
+
+<details>
+<summary>
+Utwórz 100 losowych produktów i dodaj je do SnackMachine.
+</summary>
+
+Należy użyć jednej z wymienionych kolekcji do utworzenia zbioru nazw produktów. Jeśli użyjemy struktury HashSet zagwarantuje nam to że nazwy nie będą się powtarzać. Podobnie postąpić w przypadku innych właściwości produktu ceny itp.
+
+Następnie tworzyć obiekty i losowo przydzielać wartości nazwy, ceny itp.
+
+Utworozny obiekt dodać do SnackMachine
+
+</details>
