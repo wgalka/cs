@@ -98,4 +98,4 @@ Utworozny obiekt dodać do SnackMachine
 
 
 <br>
-Do utworzonego programu będzie trzeba stworzyć menu umożiwliające interakcję użytkownika z SnackMachine.
+Do utworzonego programu będzie trzeba stworzyć menu umożliwliające interakcję użytkownika z SnackMachine.
