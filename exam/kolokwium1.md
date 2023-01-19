@@ -95,3 +95,7 @@ Następnie tworzyć obiekty i losowo przydzielać wartości nazwy, ceny itp.
 Utworozny obiekt dodać do SnackMachine
 
 </details>
+
+
+<br>
+Do utworzonego programu będzie trzeba stworzyć menu umożiwliające interakcję użytkownika z SnackMachine.
