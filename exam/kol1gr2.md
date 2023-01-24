@@ -6,16 +6,17 @@ Pewna firma sprzedaje 3 rodzaje automatów:
     - 15 rodzajów produktów
     - pojemność 500 sztuk produktów
     - Rodzaje produktów: batony, napoje zimne
-    - płatnosć gotówką
-    - przyciski mechaniczne do wyboru produktu
+    - płatnośći kartą
+    - monitor dotykowy
 - CompactCafe
     - wymiary szer. 80 cm, gł. 83 cm, wys. 183 cm
     - waga 250kg
     - 7 rodzajów produktów
     - pojemność 1120 sztuk produktów
     - Rodzaje produktów: kawa, cherbata
-    - płatnośći kartą
-    - monitor dotykowy
+   
+    - płatnosć gotówką
+    - przyciski mechaniczne do wyboru produktu
 - MicroMarket
     - wymiary szer. 89 cm, gł. 85 cm, wys. 183 cm
     - waga 240kg

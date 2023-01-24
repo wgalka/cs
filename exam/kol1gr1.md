@@ -37,9 +37,11 @@ Każda klasa dziedzicząca po niej powinna mieć:
 - metodę `AddProduct()` zwracającą true false i przyjmującą jako parametr obiekt klasy Snack. Poszczególne implementacje metody będą się różnić w klasach dziedziczących.
 - metodę `AddMoney()` zwracającą true lub false. Poszczególne implementacje metody będą się różnić w klasach dziedziczących.
 - metodę `SelectProduct()` zwracającą true lub false. Poszczególne implementacje metody będą się różnić w klasach dziedziczących.
-- pole w którym przechowywany jest aktualny stan maszyny.
 - pola przechowujące cechy wspólne wszystkich automatów.
 
+Utwórz typ wyliczeniowy z następującymi stanami:
+- AddMoney
+- SelectProduct
 
 ### Zadanie 3
 
