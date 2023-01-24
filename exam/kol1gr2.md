@@ -24,7 +24,6 @@ Pewna firma sprzedaje 3 rodzaje automatów:
     - Rodzaje produktów: długopisy, zeszyty, witaminy, suplementy diety, chusteczki, batony, chipsy, woda, soki, napoje
     - płatnośći kartą
     - monitor dotykowy
-
 ### Zadanie 1
 Utwórz klasę **Product**. Obiekty tej klasy będą przechowywać informacje o nazwie, cenie, dacie ważności produktu, typie produktu. Klasa powinna być hermetyczna. Cena nie może być ujemna a nazwa pusta. Jeśli użytkownik próbuje przypisać ujemną cenę do pola klasy przypisz wartość 0. Natomiast jeśli próbuje przypisać pustą nazwę przypisz wartość “Default name”.
 
@@ -32,7 +31,7 @@ Przesłoń metodę `ToString()` aby zwracała informację o nazwie produktu oraz
 
 ### Zadanie 2
 
-Zaprojektuj abstrakcyjną klasę AbstractVendingMachine. Zachowaj hermetyczność klasy.
+Zaprojektuj abstrakcyjną klasę `AbstractVendingMachine`. Zachowaj hermetyczność klasy.
 Każda klasa dziedzicząca po niej powinna mieć:
 - metodę `AddProduct()` zwracającą true false i przyjmującą jako parametr obiekt klasy Snack. Poszczególne implementacje metody będą się różnić w klasach dziedziczących.
 - metodę `AddMoney()` zwracającą true lub false. Poszczególne implementacje metody będą się różnić w klasach dziedziczących.
@@ -43,7 +42,7 @@ Każda klasa dziedzicząca po niej powinna mieć:
 
 ### Zadanie 3
 
-Stwórz klasę konkretną MiniMunchMachine dziedziczącą po AbstractVendingMachine umożliwiającą wykonanie wszystkich operacji.
+Stwórz klasę konkretną `CompactCafe` dziedziczącą po AbstractVendingMachine umożliwiającą wykonanie wszystkich operacji.
 - `AddMomeny()` dodaje kwotę przekazaną jako parametr funkcji do kasetki maszyny. Kwota powinna być wielkokrotnością liczby 0.5(Automat przyjmuje minimalnie monety 50gr) jeśli spełnia założenia wartość jest zapisywana w polu klasy i zwracana jest odpowiednia wartość.
 - `SelectProduct()` metoda przyjmuje numer produktu. Jeśli produkt jest w maszynie i kwota wrzucona do kasetki jest wystarczająca produkt jest wydawany z maszyny,  zwracana jest reszta(do sejfu automatu pobierana jest tylko wartość wybranego produktu) oraz zwracana jest wartość true. W przeciwnym przypadku kwota wrzucona przez użytkownika wypada z automatu i zwracana jest wartość false.
 
@@ -51,10 +50,9 @@ Stwórz klasę konkretną MiniMunchMachine dziedziczącą po AbstractVendingMach
 
 - `ShowProducts()` wyświetla id przekąsek, ich nazwę, cenę, oraz ilość.
 
-
 ### Zadanie 4
 
-Utwórz obiekt klasy `MiniMunchMachine` a nastpęnie wypełnij maszynę różnymi generowanymi losowo produktami. 
+Utwórz obiekt klasy CompactCafe a nastpęnie wypełnij maszynę różnymi generowanymi losowo produktami. 
 
 ### Zadanie 5
 Utwórz program pozwalający użytkownikowi zarządzać stanem klasy VendingMachine przez standardowe wejście/wyjście.
@@ -66,8 +64,6 @@ Utwórz menu umożliwiające:
 - Wyświetlenie produktów
 - Wyświetlenie informacji o automacie
 - Wyjście z aplikacji
-
-Historia działań użytkownika powinna zapisywać się do pliku log.txt
 
 Program powinien działać do momentu wybrania opcji wyjście z aplikacji przez użytkownika. Obdłuż wyjątki mogące wystąpić w aplikacji.
 
