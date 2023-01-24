@@ -68,6 +68,8 @@ Utwórz menu umożliwiające:
 - Wyświetlenie informacji o automacie
 - Wyjście z aplikacji
 
+Historia działań użytkownika powinna zapisywać się do pliku log.txt
+
 Program powinien działać do momentu wybrania opcji wyjście z aplikacji przez użytkownika. Obdłuż wyjątki mogące wystąpić w aplikacji.
 
 
