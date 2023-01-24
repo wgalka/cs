@@ -56,7 +56,7 @@ Stwórz klasę konkretną `CompactCafe` dziedziczącą po AbstractVendingMachine
 Utwórz obiekt klasy `CompactCafe` a nastpęnie wypełnij maszynę różnymi generowanymi losowo produktami. 
 
 ### Zadanie 5
-Utwórz program pozwalający użytkownikowi zarządzać stanem klasy `CompactCafe` przez standardowe wejście/wyjście.
+Napisz program pozwalający użytkownikowi zarządzać stanem klasy `CompactCafe` przez standardowe wejście/wyjście.
 
 Na początku działania programu wyświetl informację o obiekcie za pomocą metody `ToString()`.
 

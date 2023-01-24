@@ -57,7 +57,7 @@ Stwórz klasę konkretną `MiniMunchMachine` dziedziczącą po AbstractVendingMa
 Utwórz obiekt klasy `MiniMunchMachine` a nastpęnie wypełnij maszynę różnymi generowanymi losowo produktami. 
 
 ### Zadanie 5
-Utwórz program pozwalający użytkownikowi zarządzać stanem klasy `MiniMunchMachine` przez standardowe wejście/wyjście.
+Napisz program pozwalający użytkownikowi zarządzać stanem klasy `MiniMunchMachine` przez standardowe wejście/wyjście.
 
 Na początku działania programu wyświetl informację o obiekcie za pomocą metody `ToString()`.
 
