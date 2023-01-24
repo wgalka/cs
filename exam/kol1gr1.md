@@ -73,6 +73,10 @@ Historia działań użytkownika powinna zapisywać się do pliku log.txt
 
 Program powinien działać do momentu wybrania opcji wyjście z aplikacji przez użytkownika. Obdłuż wyjątki mogące wystąpić w aplikacji.
 
+## Kryteria oceny:
+- Aby otrzymać ocenę 5, program powinien być poprawnie działający, dobrze zorganizowany i czytelny, oraz spełniać wszystkie wymagania zadania. Powinien przewidywać i obsługiwać sytuacje wyjątkowe.(EK_4, EK_5, EK_6)
+- Należy dobrać odpowiednie struktury do problemów wystepujących w zadaniu.(EK_5)
+
 
 
 
