@@ -49,6 +49,8 @@ Stwórz klasę konkretną `MiniMunchMachine` dziedziczącą po AbstractVendingMa
 
 - `ShowProducts()` wyświetla kody przekąsek, ich nazwę, cenę, oraz ilość.
 
+- przesłoń metodę `ToString()` by zwracała informację o wszystkich polach klasy.
+
 
 ### Zadanie 4
 
@@ -56,6 +58,8 @@ Utwórz obiekt klasy `MiniMunchMachine` a nastpęnie wypełnij maszynę różnym
 
 ### Zadanie 5
 Utwórz program pozwalający użytkownikowi zarządzać stanem klasy `MiniMunchMachine` przez standardowe wejście/wyjście.
+
+Na początku działania programu wyświetl informację o obiekcie za pomocą metody `ToString()`.
 
 Utwórz menu umożliwiające:
 - Dodanie przekąski do automatu

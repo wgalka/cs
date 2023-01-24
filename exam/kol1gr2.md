@@ -49,12 +49,16 @@ Stwórz klasę konkretną `CompactCafe` dziedziczącą po AbstractVendingMachine
 
 - `ShowProducts()` wyświetla kody przekąsek, ich nazwę, cenę, oraz ilość.
 
+- przesłoń metodę `ToString()` by zwracała informację o wszystkich polach klasy.
+
 ### Zadanie 4
 
 Utwórz obiekt klasy `CompactCafe` a nastpęnie wypełnij maszynę różnymi generowanymi losowo produktami. 
 
 ### Zadanie 5
 Utwórz program pozwalający użytkownikowi zarządzać stanem klasy `CompactCafe` przez standardowe wejście/wyjście.
+
+Na początku działania programu wyświetl informację o obiekcie za pomocą metody `ToString()`.
 
 Utwórz menu umożliwiające:
 - Dodanie przekąski do automatu
