@@ -99,3 +99,14 @@ Utworozny obiekt dodać do SnackMachine
 
 <br>
 Do utworzonego programu będzie trzeba stworzyć menu umożliwliające interakcję użytkownika z SnackMachine.
+
+## Kryteria oceny:
+- Aby otrzymać ocenę 5, program powinien być poprawnie działający, dobrze zorganizowany i czytelny, oraz spełniać wszystkie wymagania zadania. Powinien przewidywać i obsługiwać sytuacje wyjątkowe.(EK_4, EK_5, EK_6)
+- Należy dobrać odpowiednie struktury do problemów wystepujących w zadaniu.(EK_5)
+<!-- ### EK_4
+Potrafi  precyzyjnie  specyfikować  problemy  informatyczne  i formułować ich rozwiązania w języku C#, wykorzystując poznane techniki programowania zorientowanego obiektowo.
+
+### EK_5
+Potrafi  stosować  podstawowe  konstrukcje programistyczne   i struktury danych występujące w języku C#. Rozumie ich zalety i wady oraz potrafi odpowiednio je dobrać uwzględniając złożoność, efektywność i jakość utworzonego rozwiązania.
+### EK_6
+Umie tworzyć proste aplikacje w języku C#. -->
