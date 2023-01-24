@@ -34,7 +34,7 @@ Przesłoń metodę `ToString()` aby zwracała informację o nazwie produktu oraz
 
 Zaprojektuj abstrakcyjną klasę `AbstractVendingMachine`. Zachowaj hermetyczność klasy.
 Każda klasa dziedzicząca po niej powinna mieć:
-- metodę `AddProduct()` przyjmującą jako parametr obiekt klasy Snack. Poszczególne implementacje metody będą się różnić w klasach dziedziczących.
+- metodę `AddProduct()` przyjmującą jako parametr obiekt klasy Product. Poszczególne implementacje metody będą się różnić w klasach dziedziczących.
 - metodę `AddMoney()` przyjmującą kwotę wrzuconą przez użytkownika. Poszczególne implementacje metody będą się różnić w klasach dziedziczących.
 - metodę `SelectProduct()` przyjmującą kod produktu. Poszczególne implementacje metody będą się różnić w klasach dziedziczących.
 - pola przechowujące cechy wspólne wszystkich automatów.
@@ -46,6 +46,9 @@ Stwórz klasę konkretną `MiniMunchMachine` dziedziczącą po AbstractVendingMa
 - `SelectProduct()` metoda przyjmuje numer produktu. Jeśli produkt jest w maszynie i kwota wrzucona do kasetki jest wystarczająca produkt ma zostać wydany.
 
 - `AddProduct()` dodaje produkt do maszyny. Metoda przyjmuje obiekty klasy produkt. Nie można dodać produktu o tej samej nazwie ale różnych cenach. Nie można też dodać nowych produktów do pełnej maszyny lub jeśli osiągnięty został limit rodzajów produktów.
+Metoda generuje losowy kod produktu.
+
+- Przeciąż metodę `AddProduct()` tak aby przyjmowała jako parametr obiekt klasy Product oraz kod produktu pod jakim zostanie zapisany.
 
 - `ShowProducts()` wyświetla kody przekąsek, ich nazwę, cenę, oraz ilość.
 
