@@ -48,7 +48,7 @@ Stwórz klasę konkretną `MicroMarket` dziedziczącą po `IVendingMachine` umo�
 
 - `BuyProduct()` metoda przyjmuje kod produktu np. F (możliwy do wpisania na klawiaturze dostępnej w maszynie patrz wyżej). Jeśli produkt jest w maszynie i kwota wrzucona do kasetki jest wystarczająca produkt ma zostać wydany(usunięty z maszyny).
 
-- `AddProduct()` dodaje produkt do maszyny. Metoda przyjmuje obiekty klasy produkt. Nie można też dodać nowych produktów do pełnej maszyny.
+- `AddProduct()` dodaje produkt do maszyny. Metoda przyjmuje obiekty klasy Product. Nie można też dodać nowych produktów do pełnej maszyny.
 
 - Przeciąż metodę `AddProduct()` tak aby przyjmowała jako parametr obiekt klasy Product oraz kod(miejsce) produktu pod jakim zostanie zapisany. np. F
 
