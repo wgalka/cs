@@ -86,7 +86,7 @@ Utwórz menu składające się z następujących opcji:
 - 5 - Wyciąg monety
 - 6 - Wyjście
 
-Zaimplementuj obsługę wszystkich opcji menu w przejrzysty i zrozumiay dla użytkownika sposób. 
+Zaimplementuj obsługę wszystkich opcji menu w przejrzysty i zrozumiały dla użytkownika sposób. 
 
 Program powinien mieć ukryte menu. Po wpisaniu "1265" mamy możliwość dodania produktów do automatu. 
 

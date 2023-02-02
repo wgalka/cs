@@ -86,7 +86,7 @@ Utwórz menu skłądające się z następujących opcji:
 - E - Wyciąg monety
 - F - Wyjście
 
-Zaimplementuj obsługę wszystkich opcji menu w przejrzysty i zrozumiay dla użytkownika sposób. 
+Zaimplementuj obsługę wszystkich opcji menu w przejrzysty i zrozumiały dla użytkownika sposób. 
 
 Program powinien mieć ukryte menu. Po wpisaniu "ACAB" mamy możliwość dodania produktów do automatu. 
 
