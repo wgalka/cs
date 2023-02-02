@@ -34,7 +34,7 @@ Przetestuj działanie metody ToString w metodzie main(). Test podpisz komentarze
 ### Zadanie 2
 
 Zaprojektuj interfejs `IVendingMachine`.
-Każda klasa dziedzicząca po interfejsie powinna mieć:
+Każda klasa implementująca interfejs powinna mieć:
 - metodę `AddProduct()` przyjmującą jako parametr obiekt klasy Product. Poszczególne implementacje metody będą się różnić w klasach dziedziczących.
 - metodę `AddMoney()` przyjmującą kwotę wrzuconą przez użytkownika. Poszczególne implementacje metody będą się różnić w klasach dziedziczących.
 - metodę `BuyProduct()` przyjmującą kod produktu. Poszczególne implementacje metody będą się różnić w klasach dziedziczących.
