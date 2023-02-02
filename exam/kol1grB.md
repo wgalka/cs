@@ -3,17 +3,17 @@ Pewna firma sprzedaje 3 rodzaje automatów:
 - MicroMarket
     - wymiary szer. 77 cm, gł. 81 cm, wys. 97 cm
     - pojemność 20 produktów
-    - płatnosć gotówką monety (20gr 50gr 1zł 2zł 5 zł)
+    - płatność gotówką monety (20gr 50gr 1zł 2zł 5 zł)
     - przyciski mechaniczne do wyboru produktu (znaki A-Z)
 - CompactCafe
     - wymiary szer. 80 cm, gł. 83 cm, wys. 183 cm
     - pojemność 25 produktów
-    - płatnosć gotówką (50gr 1zł 2zł 5zł)
+    - płatność gotówką (50gr 1zł 2zł 5zł)
     - przyciski mechaniczne do wybotu produktu (znaki A-Z)
 - MiniMunchMachine
     - wymiary szer. 89 cm, gł. 85 cm, wys. 183 cm
     - pojemność 30 produktów
-    - płatnośći kartą
+    - płatność kartą
     - monitor dotykowy
 
 ### Zadanie 1
