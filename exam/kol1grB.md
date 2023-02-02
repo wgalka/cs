@@ -90,7 +90,7 @@ Zaimplementuj obsługę wszystkich opcji menu w przejrzysty i zrozumiały dla u�
 
 Program powinien mieć ukryte menu. Po wpisaniu "ACAB" mamy możliwość dodania produktów do automatu. 
 
-**Program powinien działać do momentu wybrania opcji wyjście z aplikacji przez użytkownika. Obdłuż wyjątki mogące wystąpić w aplikacji.**
+**Program powinien działać do momentu wybrania opcji wyjście z aplikacji przez użytkownika. Obsłuż wyjątki mogące wystąpić w aplikacji.**
 
 ### Zadanie 6 (Na ocenę 4.0+)
 Zdomyfikuj program aby zapisywał i odczytywał  historię akcji wykonywanych przez użytkownika z pliku. Historia jest możliwa do wyświetlenia po wpisaniu kodu HISTORY. 
