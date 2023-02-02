@@ -93,7 +93,7 @@ Program powinien mieć ukryte menu. Po wpisaniu "ACAB" mamy możliwość dodania
 **Program powinien działać do momentu wybrania opcji wyjście z aplikacji przez użytkownika. Obsłuż wyjątki mogące wystąpić w aplikacji.**
 
 ### Zadanie 6 (Na ocenę 4.0+)
-Zdomyfikuj program aby zapisywał i odczytywał  historię akcji wykonywanych przez użytkownika z pliku. Historia jest możliwa do wyświetlenia po wpisaniu kodu HISTORY. 
+Zmodyfikuj program aby zapisywał i odczytywał  historię akcji wykonywanych przez użytkownika z pliku. Historia jest możliwa do wyświetlenia po wpisaniu kodu HISTORY. 
 
 ## Kryteria oceny:
 - Aby otrzymać ocenę 5, program powinien być poprawnie działający, dobrze zorganizowany i czytelny, oraz spełniać wszystkie wymagania zadania. Powinien przewidywać i obsługiwać sytuacje wyjątkowe.(EK_4, EK_5, EK_6)
