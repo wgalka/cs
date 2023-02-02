@@ -97,7 +97,7 @@ Zmodyfikuj program aby zapisywał i odczytywał  historię akcji wykonywanych pr
 
 ## Kryteria oceny:
 - Aby otrzymać ocenę 5, program powinien być poprawnie działający, dobrze zorganizowany i czytelny, oraz spełniać wszystkie wymagania zadania. Powinien przewidywać i obsługiwać sytuacje wyjątkowe.(EK_4, EK_5, EK_6)
-- Należy dobrać odpowiednie struktury do problemów wystepujących w zadaniu.(EK_5)
+- Należy dobrać odpowiednie struktury do problemów występujących w zadaniu.(EK_5)
 
 
 
