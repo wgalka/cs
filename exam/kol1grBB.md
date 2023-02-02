@@ -44,7 +44,7 @@ Każda klasa implementująca interfejs powinna mieć:
 ### Zadanie 3
 
 Stwórz klasę konkretną `MiniMunchMachine` implementującą interfejs `IVendingMachine` umożliwiającą wykonanie wszystkich operacji.
-- `AddMomeny()` dodaje kwotę przekazaną jako parametr funkcji do kasetki maszyny. Kwota powinna być monetą o odpowiednim nominale. Jeśli spełnia założenia wartość jest zapisywana w **polu klasy**. W przeciwnym wypadku zwróć odpowiedni wyjątek.
+- `AddMoney()` dodaje kwotę przekazaną jako parametr funkcji do kasetki maszyny. Kwota powinna być monetą o odpowiednim nominale. Jeśli spełnia założenia wartość jest zapisywana w **polu klasy**. W przeciwnym wypadku zwróć odpowiedni wyjątek.
 
 - `BuyProduct()` metoda przyjmuje kod produktu np. F (możliwy do wpisania na klawiaturze dostępnej w maszynie patrz wyżej). Jeśli produkt jest w maszynie i kwota wrzucona do kasetki jest wystarczająca produkt ma zostać wydany(usunięty z maszyny).
 
