@@ -62,7 +62,7 @@ Stwórz klasę konkretną `MicroMarket` dziedziczącą po `AbstractVendingMachin
 
 - Klasa powinna przechowywać cechy tego automatu(wymiary oraz nazwę) niemożliwe do zmiany po utworzeniu obiektu.
 
-- Przesłoń metodę `ToString()` aby wypisała informację w podanym formacie gdzie nazwa automatu to NazwaAutomatu, XX to wymiary danego automatu:
+- Przesłoń metodę `ToString()` aby wypisała informacje w podanym formacie gdzie nazwa automatu to NazwaAutomatu, XX to wymiary danego automatu:
 ```
 NazwaAutomatu - szer. XX cm, gł. XX cm, wys. XX cm
 ```

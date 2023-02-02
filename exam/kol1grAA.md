@@ -24,7 +24,7 @@ Utwórz klasę **Product**. Obiekty tej klasy będą przechowywać:
 
 Klasa powinna być hermetyczna. Cena nie może być ujemna a nazwa i data puste. Jeśli użytkownik próbuje przypisać ujemną cenę, pustą nazwę lub datę zwróć odpowiedni wyjątek.
 
-Przesłoń metodę `ToString()` aby zwracała wszystkie informację o produkcie.
+Przesłoń metodę `ToString()` aby zwracała wszystkie informacje o produkcie.
 Przetestuj działanie metody ToString w metodzie main(). Test podpisz komentarzem "TEST DZIAŁANIA TOSTRING". Utwórz obiekt klasy Product o następujących wartościach:
 - nazwa - Czekolada
 - cena - twój numer albumu
