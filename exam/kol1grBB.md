@@ -28,7 +28,7 @@ Przesłoń metodę `ToString()` aby zwracała wszystkie informacje o produkcie.
 Przetestuj działanie metody ToString w metodzie main(). Test podpisz komentarzem "TEST DZIAŁANIA TOSTRING". Utwórz obiekt klasy Product o następujących wartościach:
 - nazwa - Czekolada
 - cena - 112337
-- data - jako rok 4 ostatnie cyfry twojego numeru albumu miesiąc 2 dzień 2
+- data - 02.02.RRRR, gdzie RRRR to 4 ostatnie cyfry twojego nr albumu
 
 
 ### Zadanie 2
