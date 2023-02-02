@@ -138,13 +138,13 @@ Należy utworzyć instancję klasy i wypełnić ją różnymi produktami wykorzy
 
 Napisz program pozwalający użytkownikowi zarządzać stanem klasy `CompactCafe` przez standardowe wejście/wyjście.
 
-Utwórz menu umożliwiające:
-1. Pokaż produkty
-2. Wrzuć monetę
-3. Kup produkt
-4. Pokaż ilość wrzuconych pieniędzy
-5. Wyciąg monety
-6. Wyjście
+Utwórz menu umożliwiające:<br>
+A. Pokaż produkty<br>
+B. Wrzuć monetę<br>
+C. Kup produkt<br>
+D. Pokaż ilość wrzuconych pieniędzy<br>
+E. Wyciąg monety<br>
+F. Wyjście<br>
 
 Program powinien mieć ukryte menu. po wpisaniu "3721" mamy możliwość dodania produktów do automatu. 
 
