@@ -38,7 +38,7 @@ Każda klasa dziedzicząca po niej powinna mieć:
 - metodę `AddProduct()` przyjmującą jako parametr obiekt klasy Product. Poszczególne implementacje metody będą się różnić w klasach dziedziczących.
 - metodę `AddMoney()` przyjmującą kwotę wrzuconą przez użytkownika. Poszczególne implementacje metody będą się różnić w klasach dziedziczących.
 - metodę `BuyProduct()` przyjmującą kod produktu. Poszczególne implementacje metody będą się różnić w klasach dziedziczących.
-- metodę `ReturnCoins()` nie przyjmującą parametrów.
+- metodę `ReturnCoins()` nieprzyjmującą parametrów.
 
 
 ### Zadanie 3
