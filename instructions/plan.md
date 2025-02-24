@@ -11,3 +11,6 @@
 10. Tworzenie prostych aplikacji używających bazy danych przy użyciu technologii Entity Framework. 
 11. Tworzenie projektu aplikacji na zaliczenie z interfejsem graficznym i bazą danych przy użyciu poznanych wcześniej technologii. 
 
+
+- var vs dynamic
+
