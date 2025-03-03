@@ -1,4 +1,4 @@
-markdown: GFM
+markdown: kramdown
 highlighter: rouge
 rouge:
   style: monokai
