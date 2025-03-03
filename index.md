@@ -1,2 +1,3 @@
 - [Lab1 - Wprowadzenie do środowiska Visual Studio, tworzenie i uruchamianie prostych programów.](instructions/lab1-2025.md)
 - [Lab2 - Typy danych, wyrażenia warunkowe i instrukcje sterujące, wskaźniki w języku C#.](instructions/lab2-2025.md)
+- [Lab3 - Tworzenie klas, obiektów i struktur w języku C#.](instructions/lab3-2025.md)
