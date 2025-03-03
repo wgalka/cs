@@ -1,2 +1,4 @@
 markdown: GFM
 highlighter: rouge
+rouge:
+  style: github
