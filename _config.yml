@@ -1,4 +1,10 @@
-markdown: GFM
+# markdown: GFM
 highlighter: rouge
 rouge:
   style: monokai
+
+markdown: kramdown
+kramdown:
+  input: GFM
+  parse_block_html: true
+
