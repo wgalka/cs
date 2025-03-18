@@ -9,3 +9,6 @@
 | ... | ... | ... |... |
 | Walidacja pól formularzy | Podstawowa walidacja (czy pola nie puste/wartości są w zadanym przedziale itp) | Bardziej złożona walidacja danych, wykorzystano regular expression | Zaawansowana walidacja — walidacja zależna od kontekstu (np. różne pola dla różnych krajów), walidacja asynchroniczna (np. sprawdzenie dostępności e-maila w bazie danych) |
 | Formularze wykorzystują odpowiednie typy pól dla pobieranych danych od ożytkownika (data, lista rozwijana, checkbox) | ✅ | ✅| ✅|
+| ... | ... | ... |... |
+| Dokumentacja w postaci pliku markdown opisującego podstawowe informacje na temat aplikacji (opis aplikacji, opis bazy danych, konfiguracja i uruchomienie aplikacji) | ✅ | ✅| ✅|
+| Instrukcja obsługi |  | prosta instrukcja obsługi | instrukcja obsługi obejmuje przypadki brzegowe |
