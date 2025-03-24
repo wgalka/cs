@@ -12,3 +12,12 @@ Tworzy zmienne/funkcje które są współdzielone pomiędzy obiektami - wspóle 
 
 https://www.geeksforgeeks.org/c-sharp-constructors/
 
+## Polimorfizm
+
+1. Polimorfizm statyczny
+2. Polimorfizm dynamiczny
+
+## Interfejsy
+
+## Klasy abstrakcyjne
+
