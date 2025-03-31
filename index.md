@@ -4,6 +4,8 @@
 - [Lab4 - Hermetyzacja, dziedziczenie i kompozycja w języku C#](instructions/lab4-2025.md)
 - [Lab5 - Polimorfizm i abstrakcja (klasy abstrakcyjne i interfejsy) w języku C#.](instructions/lab5-2025.md)
 - [Lab6 - Obsługa wyjątków w języku C#.](instructions/lab6-2025.md)
+- [Lab7 - Operacje na strumieniach w języku C#.](instructions/lab7-2025.md)
+
 
 
 [wymagania projektowe](wymagania_projektowe.html)
