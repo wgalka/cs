@@ -7,6 +7,7 @@
 - [Lab7 - Operacje na strumieniach w języku C#.](instructions/lab7-2025.md)
 - [Lab8 - Obsługa kolekcji w języku C#, użycie technologii LINQ.](instructions/lab8-2025.md)
 - [Lab9 - Tworzenie graficznego interfejsu użytkownika przy użyciu Windows Forms .NET.](instructions/lab9-2025.md)
+- [Lab10 - Tworzenie prostych aplikacji używających bazy danych przy użyciu technologii Entity Framework.](instructions/lab10-2025.md)
 
 
 [wymagania projektowe](wymagania_projektowe.html)
