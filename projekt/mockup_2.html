@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Twój Koszyk</title>
+    <style>
+        :root { --primary: #ff4757; --bg: #f1f2f6; --surface: #ffffff; --text: #2f3542; }
+        body { font-family: 'Inter', sans-serif; background: var(--bg); margin: 0; display: flex; justify-content: center; padding: 40px 20px; color: var(--text); }
+        .container { background: var(--surface); width: 100%; max-width: 500px; border-radius: 24px; padding: 30px; box-shadow: 0 10px 30px rgba(0,0,0,0.05); }
+        h2 { margin: 0 0 20px; font-size: 24px; }
+        .item { display: flex; justify-content: space-between; align-items: center; padding: 15px 0; border-bottom: 1px solid #f1f2f6; }
+        .item-info { display: flex; flex-direction: column; }
+        .item-name { font-weight: 600; font-size: 16px; }
+        .item-options { font-size: 13px; color: #747d8c; margin-top: 4px; }
+        .item-price { font-weight: 700; }
+        .summary { margin-top: 20px; padding-top: 20px; }
+        .summary-row { display: flex; justify-content: space-between; margin-bottom: 10px; font-size: 15px; color: #57606f; }
+        .summary-total { display: flex; justify-content: space-between; margin-top: 15px; font-size: 20px; font-weight: 800; color: var(--text); }
+        .btn-pay { width: 100%; background: var(--primary); color: white; border: none; padding: 16px; border-radius: 12px; font-size: 16px; font-weight: 600; margin-top: 30px; cursor: pointer; }
+        .qty-control { display: flex; align-items: center; gap: 10px; background: #f1f2f6; padding: 4px 8px; border-radius: 8px; }
+        .qty-btn { background: white; border: none; width: 24px; height: 24px; border-radius: 4px; font-weight: bold; cursor: pointer; display: flex; align-items: center; justify-content: center; color: var(--text); }
+        .qty-value { font-size: 14px; font-weight: 600; width: 12px; text-align: center; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Podsumowanie koszyka</h2>
+        <div class="items">
+            <div class="item">
+                <div class="item-info">
+                    <span class="item-name">Margherita Classica</span>
+                    <span class="item-options">Rozmiar: 32cm, Dodatki: Oliwki</span>
+                </div>
+                <div style="display: flex; align-items: center; gap: 15px;">
+                    <div class="qty-control">
+                        <button class="qty-btn">-</button>
+                        <span class="qty-value">2</span>
+                        <button class="qty-btn">+</button>
+                    </div>
+                    <span class="item-price">64,00 zł</span>
+                </div>
+            </div>
+            <div class="item">
+                <div class="item-info">
+                    <span class="item-name">Coca-Cola Zero</span>
+                    <span class="item-options">Pojemność: 0.5l</span>
+                </div>
+                <div style="display: flex; align-items: center; gap: 15px;">
+                    <div class="qty-control">
+                        <button class="qty-btn">-</button>
+                        <span class="qty-value">1</span>
+                        <button class="qty-btn">+</button>
+                    </div>
+                    <span class="item-price">9,00 zł</span>
+                </div>
+            </div>
+        </div>
+        <div class="summary">
+            <div class="summary-row"><span>Suma częściowa</span><span>73,00 zł</span></div>
+            <div class="summary-row"><span>Dostawa</span><span>12,00 zł</span></div>
+            <div class="summary-row"><span>Opłata serwisowa</span><span>2,99 zł</span></div>
+            <div class="summary-total"><span>Razem do zapłaty</span><span>87,99 zł</span></div>
+        </div>
+        <button class="btn-pay">Przejdź do kasy • 87,99 zł</button>
+    </div>
+</body>
+</html>

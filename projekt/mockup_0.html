@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pusty Koszyk</title>
+    <style>
+        :root {
+            --primary: #ff4757;
+            --bg: #f1f2f6;
+            --surface: #ffffff;
+            --text: #2f3542;
+            --text-light: #747d8c;
+        }
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: var(--bg);
+            color: var(--text);
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .container {
+            background: var(--surface);
+            padding: 50px 40px;
+            border-radius: 24px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+            text-align: center;
+            max-width: 400px;
+            width: 100%;
+        }
+        .icon {
+            font-size: 80px;
+            margin-bottom: 20px;
+            color: var(--text-light);
+            opacity: 0.5;
+        }
+        h2 { margin: 0 0 10px; font-size: 24px; font-weight: 700; }
+        p { color: var(--text-light); margin: 0 0 30px; font-size: 15px; line-height: 1.5; }
+        .btn {
+            background: var(--primary);
+            color: white;
+            border: none;
+            padding: 14px 28px;
+            border-radius: 12px;
+            font-size: 16px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: transform 0.2s, box-shadow 0.2s;
+            box-shadow: 0 4px 15px rgba(255, 71, 87, 0.3);
+        }
+        .btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(255, 71, 87, 0.4);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="icon">🛒</div>
+        <h2>Twój koszyk jest pusty</h2>
+        <p>Wygląda na to, że nie dodałeś jeszcze żadnych dań. Odkryj najlepsze restauracje w Twojej okolicy.</p>
+        <button class="btn">Przeglądaj restauracje</button>
+    </div>
+</body>
+</html>

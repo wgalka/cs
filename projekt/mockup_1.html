@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu Restauracji</title>
+    <style>
+        :root { --primary: #ff4757; --bg: #f1f2f6; --surface: #ffffff; --text: #2f3542; }
+        body { font-family: 'Inter', sans-serif; background: var(--bg); margin: 0; padding: 20px; color: var(--text); }
+        .header { background: var(--surface); padding: 30px; border-radius: 20px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.05); }
+        .header h1 { margin: 0; font-size: 28px; }
+        .header p { margin: 5px 0 0; color: #747d8c; }
+        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px; }
+        .card { background: var(--surface); border-radius: 20px; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.05); display: flex; flex-direction: column; }
+        .img-placeholder { height: 180px; background: #dfe4ea; display: flex; align-items: center; justify-content: center; font-size: 40px; }
+        .content { padding: 20px; flex-grow: 1; display: flex; flex-direction: column; }
+        .title { margin: 0 0 10px; font-size: 18px; font-weight: 700; }
+        .desc { margin: 0; color: #747d8c; font-size: 14px; flex-grow: 1; }
+        .footer { display: flex; justify-content: space-between; align-items: center; margin-top: 20px; }
+        .price { font-size: 20px; font-weight: 700; color: var(--text); }
+        .btn { background: var(--primary); color: white; border: none; padding: 10px 20px; border-radius: 10px; font-weight: 600; cursor: pointer; }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Pizzeria Napoli</h1>
+        <p>Włoska • Pizza • Makaron ⭐ 4.8</p>
+    </div>
+    <div class="grid">
+        <div class="card">
+            <div class="img-placeholder">🍕</div>
+            <div class="content">
+                <h3 class="title">Margherita Classica</h3>
+                <p class="desc">Sos pomidorowy San Marzano, świeża mozzarella fior di latte, bazylia, oliwa extra virgin.</p>
+                <div class="footer">
+                    <span class="price">32 zł</span>
+                    <button class="btn">+ Dodaj</button>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="img-placeholder">🍝</div>
+            <div class="content">
+                <h3 class="title">Spaghetti Carbonara</h3>
+                <p class="desc">Oryginalna włoska carbonara z guanciale, żółtkami, pecorino romano i czarnym pieprzem.</p>
+                <div class="footer">
+                    <span class="price">45 zł</span>
+                    <button class="btn">+ Dodaj</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

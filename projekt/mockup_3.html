@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Płatność Stripe</title>
+    <style>
+        :root { --primary: #635bff; --bg: #f6f9fc; --surface: #ffffff; --text: #32325d; }
+        body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; background: var(--bg); margin: 0; display: flex; justify-content: center; align-items: center; height: 100vh; color: var(--text); }
+        .stripe-card { background: var(--surface); width: 100%; max-width: 400px; padding: 40px; border-radius: 8px; box-shadow: 0 13px 27px -5px rgba(50,50,93,0.25), 0 8px 16px -8px rgba(0,0,0,0.3); }
+        .logo { color: var(--primary); font-size: 24px; font-weight: 700; margin-bottom: 30px; display: flex; align-items: center; justify-content: center; }
+        .amount { text-align: center; font-size: 36px; font-weight: 500; margin-bottom: 30px; }
+        .field-group { margin-bottom: 20px; }
+        label { display: block; font-size: 14px; font-weight: 500; margin-bottom: 8px; color: #525f7f; }
+        .input-wrapper { border: 1px solid #e6ebf1; border-radius: 4px; padding: 12px; background: white; box-shadow: 0 1px 3px 0 #e6ebf1; display: flex; justify-content: space-between; }
+        input { border: none; outline: none; font-size: 16px; width: 100%; color: var(--text); }
+        .input-wrapper input::placeholder { color: #aab7c4; }
+        .row { display: flex; gap: 15px; }
+        .row .field-group { flex: 1; }
+        .pay-btn { background: var(--primary); color: white; border: none; width: 100%; padding: 16px; border-radius: 4px; font-size: 16px; font-weight: 600; cursor: pointer; transition: all 0.2s; margin-top: 10px; }
+        .pay-btn:hover { transform: translateY(-1px); box-shadow: 0 7px 14px rgba(50,50,93,0.1), 0 3px 6px rgba(0,0,0,0.08); background: #544ada; }
+    </style>
+</head>
+<body>
+    <div class="stripe-card">
+        <div class="logo">stripe</div>
+        <div class="amount">87,99 PLN</div>
+        <div class="field-group">
+            <label>Email</label>
+            <div class="input-wrapper"><input type="email" placeholder="jan.kowalski@example.com" value="jan.kowalski@example.com"></div>
+        </div>
+        <div class="field-group">
+            <label>Informacje o karcie</label>
+            <div class="input-wrapper" style="border-bottom-left-radius: 0; border-bottom-right-radius: 0; border-bottom: none;">
+                <input type="text" placeholder="Numer karty" value="•••• •••• •••• 4242">
+                <span style="color:#aab7c4">💳</span>
+            </div>
+            <div class="row" style="margin-top: 0;">
+                <div class="input-wrapper" style="border-top-left-radius: 0; border-top-right-radius: 0; border-right: none;">
+                    <input type="text" placeholder="MM / YY" value="12 / 28">
+                </div>
+                <div class="input-wrapper" style="border-top-left-radius: 0; border-top-right-radius: 0;">
+                    <input type="text" placeholder="CVC" value="•••">
+                </div>
+            </div>
+        </div>
+        <button class="pay-btn">Zapłać 87,99 PLN</button>
+    </div>
+</body>
+</html>

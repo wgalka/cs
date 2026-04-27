@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Historia Zamówień</title>
+    <style>
+        :root { --primary: #ff4757; --bg: #f1f2f6; --surface: #ffffff; --text: #2f3542; }
+        body { font-family: 'Inter', sans-serif; background: var(--bg); margin: 0; display: flex; justify-content: center; padding: 40px 20px; color: var(--text); }
+        .container { width: 100%; max-width: 600px; }
+        h1 { margin: 0 0 30px; font-size: 28px; }
+        .card { background: var(--surface); border-radius: 20px; padding: 25px; margin-bottom: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.05); }
+        .card-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 15px; padding-bottom: 15px; border-bottom: 1px solid #f1f2f6; }
+        .restaurant { font-weight: 700; font-size: 18px; display: flex; align-items: center; gap: 10px; }
+        .date { color: #747d8c; font-size: 14px; }
+        .status { padding: 4px 10px; border-radius: 20px; font-size: 12px; font-weight: 600; }
+        .status.delivered { background: #e3fbed; color: #2ed573; }
+        .items { font-size: 15px; color: #57606f; margin-bottom: 20px; line-height: 1.6; }
+        .card-footer { display: flex; justify-content: space-between; align-items: center; }
+        .total { font-size: 18px; font-weight: 700; }
+        .btn { background: var(--primary); color: white; border: none; padding: 10px 20px; border-radius: 10px; font-weight: 600; cursor: pointer; font-size: 14px; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Twoje zamówienia</h1>
+        <div class="card">
+            <div class="card-header">
+                <div class="restaurant"><span>🍕</span> Pizzeria Napoli</div>
+                <div class="status delivered">Dostarczone</div>
+            </div>
+            <div class="date">Wczoraj, 19:30</div>
+            <div class="items">
+                • 2x Margherita Classica<br>
+                • 1x Coca-Cola Zero
+            </div>
+            <div class="card-footer">
+                <span class="total">87,99 zł</span>
+                <button class="btn">Zamów ponownie</button>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <div class="restaurant"><span>🍔</span> Burger King</div>
+                <div class="status delivered">Dostarczone</div>
+            </div>
+            <div class="date">12 kwietnia, 14:15</div>
+            <div class="items">
+                • 1x Whopper Menu<br>
+                • 1x Onion Rings
+            </div>
+            <div class="card-footer">
+                <span class="total">45,50 zł</span>
+                <button class="btn">Zamów ponownie</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ocena i Feedback</title>
+    <style>
+        :root { --primary: #ffa502; --bg: #f1f2f6; --surface: #ffffff; --text: #2f3542; }
+        body { font-family: 'Inter', sans-serif; background: var(--bg); margin: 0; display: flex; justify-content: center; align-items: center; height: 100vh; color: var(--text); }
+        .container { background: var(--surface); width: 100%; max-width: 400px; border-radius: 24px; padding: 40px; box-shadow: 0 10px 30px rgba(0,0,0,0.05); text-align: center; }
+        h2 { margin: 0 0 10px; font-size: 24px; }
+        p { color: #747d8c; margin: 0 0 30px; font-size: 15px; }
+        .stars { display: flex; justify-content: center; gap: 10px; margin-bottom: 30px; flex-direction: row-reverse; }
+        .star { font-size: 40px; color: #dfe4ea; cursor: pointer; transition: color 0.2s; }
+        .star:hover, .star:hover ~ .star { color: var(--primary); }
+        .active { color: var(--primary); }
+        textarea { width: 100%; box-sizing: border-box; background: #f1f2f6; border: none; border-radius: 12px; padding: 15px; font-family: inherit; font-size: 14px; min-height: 100px; resize: none; margin-bottom: 20px; outline: none; }
+        .btn { width: 100%; background: var(--text); color: white; border: none; padding: 16px; border-radius: 12px; font-size: 16px; font-weight: 600; cursor: pointer; transition: background 0.2s; }
+        .btn:hover { background: #1e272e; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Smakowało Ci?</h2>
+        <p>Oceń swoje zamówienie z Pizzeria Napoli.</p>
+        <div class="stars">
+            <span class="star">★</span>
+            <span class="star">★</span>
+            <span class="star">★</span>
+            <span class="star active">★</span>
+            <span class="star active">★</span>
+        </div>
+        <textarea placeholder="Co poszło dobrze, a co możemy poprawić? (Opcjonalnie)"></textarea>
+        <button class="btn">Wyślij opinię</button>
+    </div>
+</body>
+</html>
