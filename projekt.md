@@ -2,11 +2,9 @@
 
 ## Zawartość archiwum (.zip):
 
-[x] [Dokumentacja kodu XML](projekt/dokumentacja_kodu.md) (wygenerowana do HTML)
-
-[x] [Podręcznik użytkownika](projekt/dokumentacja.md)
-
-[x] Kod źródłowy (całe rozwiązanie `.sln`)
+- [x] [Dokumentacja kodu XML](projekt/dokumentacja_kodu.md) (wygenerowana do HTML)
+- [x] [Podręcznik użytkownika](projekt/dokumentacja.md)
+- [x] Kod źródłowy (całe rozwiązanie `.sln`)
 
 ## Format nazwy pliku:
 `nazwisko_imie_nr-albumu_oczekiwana-ocena.zip`
