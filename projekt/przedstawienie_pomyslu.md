@@ -172,36 +172,43 @@ graph LR
 Przykład kompletnego przepływu dla funkcjonalności (Proces zamawiania jedzenia):
 
 1. **Puste Stany (Empty State)** – co widzi użytkownik przed podjęciem akcji. Projektowanie komunikatów, gdy system nie ma jeszcze danych.
+
    ![Pusty Koszyk](images/mockup_0.png)
    *Widok pustego koszyka: zachęcenie do działania i obsługa braku danych.*
 
 2. **Wybór dań (Menu Restauracji)** – użytkownik przegląda ofertę i dodaje pozycje.
+
    ![Menu Restauracji](images/mockup_1.png)
    *Widok menu: apetyczne zdjęcia, ceny i wyraźne przyciski dodawania.*
 
 3. **Koszyk i Podsumowanie** – weryfikacja wyboru, adres dostawy i przejście do płatności.
+
    ![Twój Koszyk](images/mockup_2.png)
    *Widok koszyka: przejrzyste podsumowanie kosztów i przycisk finalizacji.*
 
 4. **Płatność (Stripe)** – wybór metody i bezpieczna autoryzacja transakcji.
+
    ![Płatność Stripe](images/mockup_3.png)
    *Okno płatności: integracja z zewnętrznym dostawcą i obsługa stanów płatności.*
 
 5. **Śledzenie Zamówienia (Realizacja)** – ekran po opłaceniu zamówienia, domykający proces.
+
    ![Śledzenie Zamówienia](images/mockup_4.png)
    *Widok śledzenia: mapa, szacowany czas i wizualizacja statusu ("w drodze").*
 
 6. **Ocena i Feedback** – pętla zwrotna od użytkownika. Jak dane o jakości wracają do systemu.
+
    ![Ocena i Feedback](images/mockup_5.png)
    *Widok oceny: relacja 1:N (zamówienie -> recenzja) i UI gwiazdkowe.*
 
 7. **Historia Zamówień** – wgląd w dane archiwalne. Jak system zarządza stanem zakończonym.
+
    ![Historia Zamówień](images/mockup_6.png)
    *Widok historii: zarządzanie listą obiektów i akcja "zamów ponownie".*
 
 To właśnie ten przebieg (flow) jest podstawą do budowania logiki aplikacji i to on będzie weryfikowany przy odbiorze projektu, a nie standardowe okno logowania. 
 
-> **Ważne:** Pamiętaj, że powyższy flow to jedna z wielu części systemu. Aby aplikacja była w pełni funkcjonalna, należy zrealizować szereg funkcjonalności administracyjnych i pomocniczych: od wszystkich formularzy dodawania, edycji i usuwania produktów (CRUD), przez zaawansowane zarządzanie grupami użytkowników i uprawnieniami, aż po logikę powiadomień i systemy raportowe. 
+> **Ważne:** Pamiętaj, że powyższy przebieg to jedna z wielu części systemu. Aby aplikacja była w pełni funkcjonalna, należy zrealizować szereg funkcjonalności administracyjnych i pomocniczych: od wszystkich formularzy dodawania, edycji i usuwania produktów (CRUD), przez zaawansowane zarządzanie grupami użytkowników i uprawnieniami, aż po logikę powiadomień i systemy raportowe. 
 
 ## 4. Przykład: Jak poprawnie zdefiniować funkcjonalność?
 
