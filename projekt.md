@@ -1,5 +1,7 @@
 # Projekt zaliczeniowy 2025/2026
 
+Przed implementacją projektu pomysł na projekt musi być zaakceptowany przez prowadzącego. Pod [tym](projekt/przedstawienie_pomyslu.html) adresem znajdziesz wytyczne co do prezentacji pomysłu na projekt.
+
 ## Zawartość archiwum (.zip):
 
 - [x] [Dokumentacja kodu XML](projekt/dokumentacja_kodu.md) (wygenerowana do HTML)

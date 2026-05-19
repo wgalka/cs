@@ -1,4 +1,11 @@
-````markdown
+
+Dokumentacja powinna być sporządzona w formacie Markdown.
+
+https://www.markdownguide.org/
+
+Plik powinien znajdować się w katalogu projektu i być nazwany `dokumentacja.md`.
+
+```markdown
 # Temat projektu
 
 Krótki, zwięzły opis (tzw. *Elevator pitch*) – 2-3 zdania tłumaczące główny cel aplikacji, dla kogo jest przeznaczona i jakie jest jej główne zastosowanie.
@@ -63,4 +70,4 @@ Każde zdjęcie powinno mieć opis, który wyjaśnia, co jest na zdjęciu.
 - Czego zabrakło w pierwszej wersji projektu?
 - Jakie funkcjonalności mogłyby powstać w "v2.0" (np. integracja z płatnościami, system powiadomień mailowych)?
 - Gdzie dostrzegacie potencjał na optymalizację (np. dodanie cache'owania, zmiana bazy danych)?
-````
+```

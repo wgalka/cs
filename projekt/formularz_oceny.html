@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularz Oceny Projektu - Programowanie Obiektowe II</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #6366f1;
+            --primary-hover: #4f46e5;
+            --bg: #f8fafc;
+            --card-bg: #ffffff;
+            --text-main: #1e293b;
+            --text-muted: #64748b;
+            --border: #e2e8f0;
+            --accent: #10b981;
+            --warning: #f59e0b;
+            --danger: #ef4444;
+            --radius: 12px;
+            --shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+        }
+
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --bg: #0f172a;
+                --card-bg: #1e293b;
+                --text-main: #f1f5f9;
+                --text-muted: #94a3b8;
+                --border: #334155;
+                --shadow: 0 10px 15px -3px rgb(0 0 0 / 0.3);
+            }
+        }
+
+        * { box-sizing: border-box; }
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: var(--bg);
+            color: var(--text-main);
+            margin: 0;
+            padding: 20px;
+            line-height: 1.5;
+            transition: background-color 0.3s ease;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 1fr 320px;
+            gap: 24px;
+        }
+
+        @media (max-width: 850px) {
+            .container { grid-template-columns: 1fr; }
+            .sidebar { position: static !important; }
+        }
+
+        header {
+            grid-column: 1 / -1;
+            margin-bottom: 20px;
+            background: linear-gradient(135deg, var(--primary), #8b5cf6);
+            padding: 40px;
+            border-radius: var(--radius);
+            color: white;
+            box-shadow: var(--shadow);
+        }
+
+        header h1 { margin: 0; font-size: 2rem; font-weight: 700; }
+        header p { opacity: 0.9; margin: 10px 0 0; }
+
+        .card {
+            background: var(--card-bg);
+            padding: 24px;
+            border-radius: var(--radius);
+            border: 1px solid var(--border);
+            box-shadow: var(--shadow);
+            margin-bottom: 24px;
+        }
+
+        .card-title {
+            font-size: 1.1rem;
+            font-weight: 600;
+            margin-bottom: 16px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .card-title .max-pts {
+            font-size: 0.8rem;
+            color: var(--text-muted);
+            background: var(--bg);
+            padding: 4px 8px;
+            border-radius: 6px;
+        }
+
+        .form-group { margin-bottom: 20px; }
+        label { display: block; margin-bottom: 8px; font-weight: 500; font-size: 0.9rem; }
+        
+        input[type="text"], select {
+            width: 100%;
+            padding: 10px 12px;
+            border-radius: 8px;
+            border: 1px solid var(--border);
+            background: var(--bg);
+            color: var(--text-main);
+            font-family: inherit;
+        }
+
+        .slider-container {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+        input[type="range"] {
+            flex-grow: 1;
+            accent-color: var(--primary);
+        }
+
+        .pts-display {
+            min-width: 45px;
+            text-align: center;
+            font-weight: 700;
+            background: var(--primary);
+            color: white;
+            padding: 4px 8px;
+            border-radius: 6px;
+        }
+
+        .tech-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 16px;
+        }
+
+        .sidebar {
+            position: sticky;
+            top: 20px;
+            height: fit-content;
+        }
+
+        .result-card {
+            background: var(--card-bg);
+            padding: 24px;
+            border-radius: var(--radius);
+            border: 1px solid var(--border);
+            box-shadow: var(--shadow);
+            text-align: center;
+        }
+
+        .total-score {
+            font-size: 3rem;
+            font-weight: 800;
+            margin: 10px 0;
+            color: var(--primary);
+        }
+
+        .grade-display {
+            font-size: 1.5rem;
+            font-weight: 700;
+            padding: 10px;
+            border-radius: 8px;
+            background: var(--bg);
+            margin-bottom: 20px;
+        }
+
+        .grade-2 { color: var(--danger); }
+        .grade-3 { color: var(--warning); }
+        .grade-4 { color: var(--primary); }
+        .grade-5 { color: var(--accent); }
+
+        .btn {
+            width: 100%;
+            padding: 12px;
+            border: none;
+            border-radius: 8px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.2s;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+            margin-bottom: 10px;
+        }
+
+        .btn-primary { background: var(--primary); color: white; }
+        .btn-primary:hover { background: var(--primary-hover); }
+        
+        .btn-outline { 
+            background: transparent; 
+            border: 1px solid var(--border); 
+            color: var(--text-main); 
+        }
+        .btn-outline:hover { background: var(--border); }
+
+        .desc-text {
+            font-size: 0.85rem;
+            color: var(--text-muted);
+            margin-bottom: 12px;
+        }
+
+        /* Printing adjustments */
+        @media print {
+            .btn, .sidebar { display: none; }
+            .container { display: block; }
+            body { background: white; padding: 0; }
+            .card { box-shadow: none; border: 1px solid #ccc; break-inside: avoid; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <h1>Formularz Oceny Projektu</h1>
+            <p>Programowanie Obiektowe II - C# (2025/2026)</p>
+        </header>
+
+        <main>
+            <div class="card">
+                <div class="card-title">Dane Studenta</div>
+                <div class="form-group">
+                    <label for="studentName">Imię i Nazwisko</label>
+                    <input type="text" id="studentName" placeholder="np. Jan Kowalski">
+                </div>
+                <div class="tech-grid">
+                    <div class="form-group">
+                        <label for="studentId">Numer Indeksu</label>
+                        <input type="text" id="studentId" placeholder="123456">
+                    </div>
+                    <div class="form-group">
+                        <label for="projectTopic">Temat Projektu</label>
+                        <input type="text" id="projectTopic" placeholder="np. Kalkulator Paragonów">
+                    </div>
+                </div>
+            </div>
+
+            <!-- 1. Baza Danych -->
+            <div class="card">
+                <div class="card-title">
+                    1. Baza Danych 
+                    <span class="max-pts">Max 10 pkt</span>
+                </div>
+                <p class="desc-text">Złożoność schematu, relacje (1:N, N:M), normalizacja, integralność danych, migracje.</p>
+                <div class="slider-container">
+                    <input type="range" id="ptsDatabase" min="0" max="10" value="0">
+                    <span class="pts-display" id="valDatabase">0</span>
+                </div>
+            </div>
+
+            <!-- 2. Kod i Architektura -->
+            <div class="card">
+                <div class="card-title">
+                    2. Kod i Architektura
+                    <span class="max-pts">Max 20 pkt</span>
+                </div>
+                <p class="desc-text">Struktura warstwowa, wzorce (MVVM, DI), walidacja, obsługa wyjątków, czytelność.</p>
+                <div class="slider-container">
+                    <input type="range" id="ptsCode" min="0" max="20" value="0">
+                    <span class="pts-display" id="valCode">0</span>
+                </div>
+            </div>
+
+            <!-- 3. UI i UX -->
+            <div class="card">
+                <div class="card-title">
+                    3. UI i UX
+                    <span class="max-pts">Max 20 pkt</span>
+                </div>
+                <p class="desc-text">Układ okien, nawigacja, stylizacja, intuicyjność obsługi.</p>
+                <div class="slider-container">
+                    <input type="range" id="ptsUIUX" min="0" max="20" value="0">
+                    <span class="pts-display" id="valUIUX">0</span>
+                </div>
+            </div>
+
+            <!-- 4. Technologie -->
+            <div class="card">
+                <div class="card-title">
+                    4. Technologie
+                    <span class="max-pts">Max 20 pkt</span>
+                </div>
+                
+                <div class="form-group">
+                    <label>Warstwa Interfejsu (UI)</label>
+                    <select id="techUI">
+                        <option value="0">Brak / Inna (0 pkt)</option>
+                        <option value="6">Windows Forms (6 pkt)</option>
+                        <option value="9">WPF / .NET MAUI / Blazor (9 pkt)</option>
+                        <option value="10">WinUI 3 (10 pkt)</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label>Warstwa Danych</label>
+                    <select id="techData">
+                        <option value="0">Brak / Inna (0 pkt)</option>
+                        <option value="6">ADO.NET (6 pkt)</option>
+                        <option value="10">Entity Framework Core (10 pkt)</option>
+                    </select>
+                </div>
+            </div>
+
+            <!-- 5. Dokumentacja -->
+            <div class="card">
+                <div class="card-title">
+                    5. Dokumentacja
+                    <span class="max-pts">Max 10 pkt</span>
+                </div>
+                <p class="desc-text">Markdown, opis celu, wymagania, schemat ERD, instrukcja uruchomienia, podręcznik.</p>
+                <div class="slider-container">
+                    <input type="range" id="ptsDocs" min="0" max="10" value="0">
+                    <span class="pts-display" id="valDocs">0</span>
+                </div>
+            </div>
+
+            <!-- 6. Obrona -->
+            <div class="card">
+                <div class="card-title">
+                    6. Obrona Projektu
+                    <span class="max-pts">Max 20 pkt</span>
+                </div>
+                <p class="desc-text">Prezentacja, orientacja w kodzie, odpowiedzi na pytania, modyfikacja kodu.</p>
+                <div class="slider-container">
+                    <input type="range" id="ptsDefense" min="0" max="20" value="0">
+                    <span class="pts-display" id="valDefense">0</span>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-title">Uwagi Dodatkowe</div>
+                <textarea id="notes" style="width:100%; min-height:100px; padding:10px; border-radius:8px; border:1px solid var(--border); background:var(--bg); color:var(--text-main); font-family:inherit;" placeholder="Wpisz opcjonalne uwagi do oceny..."></textarea>
+            </div>
+        </main>
+
+        <aside class="sidebar">
+            <div class="result-card">
+                <div style="font-size: 0.9rem; font-weight: 600; color: var(--text-muted);">WYNIK KOŃCOWY</div>
+                <div class="total-score" id="totalScore">0</div>
+                <div style="margin-bottom: 10px; color: var(--text-muted);">/ 100 pkt</div>
+                
+                <div class="grade-display" id="gradeDisplay">niedostateczny (2.0)</div>
+
+                <button class="btn btn-primary" onclick="copyMarkdown()">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+                    Kopiuj Markdown
+                </button>
+                <button class="btn btn-outline" onclick="downloadMarkdown()">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+                    Pobierz .md
+                </button>
+                <button class="btn btn-outline" onclick="window.print()">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 6 2 18 2 18 9"></polyline><path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"></path><rect x="6" y="14" width="12" height="8"></rect></svg>
+                    Drukuj do PDF
+                </button>
+            </div>
+        </aside>
+    </div>
+
+    <script>
+        function updateScore() {
+            const fields = ['ptsDatabase', 'ptsCode', 'ptsUIUX', 'ptsDocs', 'ptsDefense', 'techUI', 'techData', 'studentName', 'studentId', 'projectTopic', 'notes'];
+            const data = {};
+            
+            fields.forEach(f => {
+                const el = document.getElementById(f);
+                data[f] = el.value;
+            });
+
+            // Update displays
+            document.getElementById('valDatabase').innerText = data.ptsDatabase;
+            document.getElementById('valCode').innerText = data.ptsCode;
+            document.getElementById('valUIUX').innerText = data.ptsUIUX;
+            document.getElementById('valDocs').innerText = data.ptsDocs;
+            document.getElementById('valDefense').innerText = data.ptsDefense;
+
+            const total = parseInt(data.ptsDatabase) + parseInt(data.ptsCode) + parseInt(data.ptsUIUX) + 
+                          parseInt(data.techUI) + parseInt(data.techData) + 
+                          parseInt(data.ptsDocs) + parseInt(data.ptsDefense);
+            
+            document.getElementById('totalScore').innerText = total;
+
+            let gradeText = "";
+            let gradeClass = "";
+
+            if (total <= 50) { gradeText = "niedostateczny (2.0)"; gradeClass = "grade-2"; }
+            else if (total <= 60) { gradeText = "dostateczny (3.0)"; gradeClass = "grade-3"; }
+            else if (total <= 70) { gradeText = "dostateczny plus (3.5)"; gradeClass = "grade-3"; }
+            else if (total <= 80) { gradeText = "dobry (4.0)"; gradeClass = "grade-4"; }
+            else if (total <= 90) { gradeText = "dobry plus (4.5)"; gradeClass = "grade-4"; }
+            else { gradeText = "bardzo dobry (5.0)"; gradeClass = "grade-5"; }
+
+            const display = document.getElementById('gradeDisplay');
+            display.innerText = gradeText;
+            display.className = "grade-display " + gradeClass;
+
+            // Auto-save to localStorage
+            localStorage.setItem('eval_form_data_2026', JSON.stringify(data));
+        }
+
+        function loadFromStorage() {
+            const saved = localStorage.getItem('eval_form_data_2026');
+            if (saved) {
+                const data = JSON.parse(saved);
+                Object.keys(data).forEach(key => {
+                    const el = document.getElementById(key);
+                    if (el) el.value = data[key];
+                });
+                updateScore();
+            }
+        }
+
+        function generateMarkdownContent() {
+            const name = document.getElementById('studentName').value || "---";
+            const id = document.getElementById('studentId').value || "---";
+            const topic = document.getElementById('projectTopic').value || "---";
+            const total = parseInt(document.getElementById('totalScore').innerText);
+            const grade = document.getElementById('gradeDisplay').innerText;
+            const notes = document.getElementById('notes').value;
+
+            const db = document.getElementById('ptsDatabase').value;
+            const code = document.getElementById('ptsCode').value;
+            const uiux = document.getElementById('ptsUIUX').value;
+            const tech = parseInt(document.getElementById('techUI').value) + parseInt(document.getElementById('techData').value);
+            const docs = document.getElementById('ptsDocs').value;
+            const defense = document.getElementById('ptsDefense').value;
+
+            const check = (min, max) => (total >= min && total <= max) ? " **[ X ]**" : " [   ]";
+
+            return `# Formularz Oceny Projektu: Programowanie Obiektowe II (C#)
+
+**Student:** ${name}  
+**Indeks:** ${id}
+**Temat:** ${topic}
+
+---
+
+## 1. Punktacja Szczegółowa (Max 100 pkt)
+
+| Kategoria | Kryteria | Punkty | Maks |
+| :--- | :--- | :---: | :---: |
+| **Baza Danych** | Schemat, relacje, normalizacja, integralność, migracje | ${db} | 10 |
+| **Kod i Architektura** | MVVM/DI, warstwy, walidacja, obsługa błędów, czystość | ${code} | 20 |
+| **UI i UX** | Układ okien, nawigacja, stylizacja, intuicyjność | ${uiux} | 20 |
+| **Technologie (UI + Data)** | Wybrane technologie (WinUI/EF Core/itp.) | ${tech} | 20 |
+| **Dokumentacja** | Cel, wymagania, ERD, instrukcja, manual (zrzuty) | ${docs} | 10 |
+| **Obrona Projektu** | Prezentacja, orientacja w kodzie, odpowiedzi, modyfikacja | ${defense} | 20 |
+| **SUMA** | | **${total}** | **100** |
+
+---
+
+## 2. Ocena Końcowa
+
+| Suma Punktów | Ocena | Skala | Zaznacz |
+| :--- | :--- | :---: | :---: |
+| **0 – 50 pkt** | niedostateczny | (2.0) |${check(0, 50)}|
+| **51 – 60 pkt** | dostateczny | (3.0) |${check(51, 60)}|
+| **61 – 70 pkt** | dostateczny plus | (3.5) |${check(61, 70)}|
+| **71 – 80 pkt** | dobry | (4.0) |${check(71, 80)}|
+| **81 – 90 pkt** | dobry plus | (4.5) |${check(81, 90)}|
+| **91 – 100 pkt** | bardzo dobry | (5.0) |${check(91, 100)}|
+
+**OCENA KOŃCOWA: ${grade}**
+
+---
+
+## 3. Uwagi i Komentarze
+
+${notes || "_Brak uwag_"}
+
+---
+*Wygenerowano automatycznie z Formularza Oceny*
+`;
+        }
+
+        function copyMarkdown() {
+            const md = generateMarkdownContent();
+            navigator.clipboard.writeText(md).then(() => {
+                alert("Podsumowanie skopiowane do schowka (Markdown)!");
+            });
+        }
+
+        function downloadMarkdown() {
+            const content = generateMarkdownContent();
+            const name = document.getElementById('studentName').value || "ocena";
+            const filename = `${name.replace(/\s+/g, '_')}.md`;
+            
+            const blob = new Blob([content], { type: 'text/markdown' });
+            const url = window.URL.createObjectURL(blob);
+            const a = document.createElement('a');
+            a.href = url;
+            a.download = filename;
+            a.click();
+            window.URL.revokeObjectURL(url);
+        }
+
+        // Add event listeners for all inputs to trigger updateScore
+        window.onload = () => {
+            const inputs = document.querySelectorAll('input, select, textarea');
+            inputs.forEach(input => {
+                input.addEventListener('input', updateScore);
+            });
+            loadFromStorage();
+        };
+    </script>
+</body>
+</html>
